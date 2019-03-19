@@ -16,27 +16,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_centerVertical="true"
-                    android:id="@+id/ivCloseShare"
-                    android:src="@drawable/ic_clear_black_24dp"/>
-
-                <Spinner
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/ivCloseShare"
-                    android:id="@+id/spinnerDirectory"
-                    android:textSize="20sp"
-                    android:textColor="#000000"
-                    android:text="Gallery"
-                    android:layout_centerVertical="true"
-                    android:gravity="center_vertical">
-
-
-                </Spinner>
 
                 <TextView
                     android:layout_width="wrap_content"
