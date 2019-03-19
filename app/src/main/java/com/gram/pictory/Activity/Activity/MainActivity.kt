@@ -1,7 +1,7 @@
-package com.gram.pictory.Activity
+package com.gram.pictory.Activity.Activity
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import com.gram.pictory.R
 
 class MainActivity : AppCompatActivity() {
