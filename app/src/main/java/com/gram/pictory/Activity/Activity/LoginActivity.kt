@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
         registerTextView.setOnClickListener {
-
+            startActivity<SignupActivity>()
         }
 
     }
