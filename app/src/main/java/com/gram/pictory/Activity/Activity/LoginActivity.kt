@@ -24,6 +24,9 @@ class LoginActivity : AppCompatActivity() {
                 startActivity<MainActivity>()
             }
         }
+        registerTextView.setOnClickListener {
+
+        }
 
     }
 
