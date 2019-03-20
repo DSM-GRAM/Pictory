@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.gram.pictory.R
+import kotlinx.android.synthetic.main.snippet_top_gallerytoolbar.*
 
 class PostFragment : Fragment() {
 
@@ -13,8 +14,13 @@ class PostFragment : Fragment() {
         super.onCreateView(inflater, container, savedInstanceState)
         val view = inflater.inflate(R.layout.fragment_post, null)
 
+        tvNext.setOnClickListener {
+
+        }
+
         return view
     }
+
 
 
 }
