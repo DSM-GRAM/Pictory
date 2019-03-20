@@ -8,7 +8,7 @@
         android:icon="@drawable/ic_feed"/>
 
     <item
-        android:id="@+id/menu_write"
+        android:id="@+id/menu_post"
         android:title="글쓰기"
         android:icon="@drawable/ic_plus"/>
 
