@@ -1,13 +1,13 @@
-package com.gram.pictory.Activity.Activity
+package com.gram.pictory.Activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.ContextMenu
 import android.view.MenuItem
 import android.view.View
-import com.gram.pictory.Activity.Fragment.FeedFragment
-import com.gram.pictory.Activity.Fragment.MypageFragment
-import com.gram.pictory.Activity.Fragment.PostFragment
+import com.gram.pictory.Fragment.FeedFragment
+import com.gram.pictory.Fragment.MypageFragment
+import com.gram.pictory.Fragment.PostFragment
 import com.gram.pictory.R
 
 class MainActivity : AppCompatActivity() {
