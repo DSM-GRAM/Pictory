@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.gram.pictory.Activity.MainActivity"/>
-        <activity android:name="com.gram.pictory.Activity.SignupActivity"/>
+        <activity android:name="com.gram.pictory.Activity.SignUpActivity"/>
     </application>
 
 </manifest>

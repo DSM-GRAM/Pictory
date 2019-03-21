@@ -3,6 +3,10 @@ package com.gram.pictory.Activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+
+import com.gram.pictory.R
+import kotlinx.android.synthetic.main.activity_login.*
+import org.jetbrains.anko.startActivity
 import com.gram.pictory.Connect.Connecter.api
 import com.gram.pictory.Model.LoginModel
 import com.gram.pictory.R
@@ -19,6 +23,18 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         loginBtn.setOnClickListener {
+            if (idEditText.text.toString().length == 0) {
+                Toast.makeText(this, "아이디를 입력해주세요", Toast.LENGTH_SHORT).show()
+            }
+            else if(pwEditText.text.toString().length == 0) {
+                Toast.makeText(this, "비밀번호를 입력해주세요", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                startActivity<MainActivity>()
+            }
+        }
+        registerTextView.setOnClickListener {
+            startActivity<SignUpActivity>()
             if (idEditText.text.isNullOrBlank()) {
                 Toast.makeText(this, "아이디를 입력해주세요", Toast.LENGTH_SHORT).show()
             }

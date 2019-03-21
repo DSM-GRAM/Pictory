@@ -12,15 +12,10 @@ class PostFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        val view = inflater.inflate(R.layout.fragment_post, null)
-
+        val view = inflater.inflate(R.layout.fragment_post, container, false)
         tvNext.setOnClickListener {
 
         }
-
         return view
     }
-
-
-
 }
