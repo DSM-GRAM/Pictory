@@ -1,4 +1,4 @@
-package com.gram.pictory.Activity.Fragment
+package com.gram.pictory.Fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -8,8 +8,10 @@ import android.view.ViewGroup
 import com.gram.pictory.R
 
 class MypageFragment : Fragment() {
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_mypage, null)
+        super.onCreateView(inflater, container, savedInstanceState)
+        val view = inflater.inflate(R.layout.fragment_mypage, container, false)
         return view
     }
 }

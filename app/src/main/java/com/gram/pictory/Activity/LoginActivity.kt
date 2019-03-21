@@ -1,4 +1,4 @@
-package com.gram.pictory.Activity.Activity
+package com.gram.pictory.Activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
         registerTextView.setOnClickListener {
-            startActivity<SignupActivity>()
+            startActivity<SignUpActivity>()
         }
 
     }
