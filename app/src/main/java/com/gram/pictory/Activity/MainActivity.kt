@@ -45,5 +45,33 @@ class MainActivity : AppCompatActivity() {
             }
         }
         false
+
+    }
+
+    override fun onCreateContextMenu(menu: ContextMenu?, v: View?, menuInfo: ContextMenu.ContextMenuInfo?) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        menuInflater.inflate(R.menu.main_navigation_menu, menu)
+    }
+
+    override fun onContextItemSelected(item: MenuItem?): Boolean {
+        when (item?.itemId) {
+            R.id.menu_feed -> {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.main_framelayout, FeedFragment())
+                    .commit()
+            }
+            R.id.menu_post -> {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.main_framelayout, PostFragment())
+                    .commit()
+            }
+            R.id.menu_mypage -> {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.main_framelayout, MypageFragment())
+                    .commit()
+            }
+        }
+
+        return super.onContextItemSelected(item)
     }
 }

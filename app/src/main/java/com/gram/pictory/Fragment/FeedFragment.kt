@@ -22,5 +22,3 @@ class FeedFragment: Fragment() {
         feed_recyclerview.adapter = FeedRvAdapter(arrayListOf(FeedModel("fsdfsd", "sfgsf", 10, 20, "안녕")))
         return view
     }
-
-}

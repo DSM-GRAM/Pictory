@@ -123,9 +123,7 @@
                     android:layout_alignParentEnd="true"
                     android:paddingRight="16dp"/>
 
-
         </android.support.constraint.ConstraintLayout>
-
 
     </LinearLayout>
 

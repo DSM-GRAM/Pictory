@@ -3,6 +3,8 @@ package com.gram.pictory.Activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.gram.pictory.Connect.Connecter
+import com.gram.pictory.Connect.Connecter.api
+import com.gram.pictory.R
 import kotlinx.android.synthetic.main.activity_signup.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.toast
@@ -78,6 +80,6 @@ class SignUpActivity: AppCompatActivity() {
     }
 
     fun failSignUp(){
-
+      
     }
 }
