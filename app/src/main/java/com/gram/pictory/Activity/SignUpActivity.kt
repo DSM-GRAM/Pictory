@@ -3,7 +3,6 @@ package com.gram.pictory.Activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.gram.pictory.Connect.Connecter
-import com.gram.pictory.Connect.Connecter.api
 import com.gram.pictory.R
 import kotlinx.android.synthetic.main.activity_signup.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
@@ -13,10 +12,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import android.content.Intent
 import android.graphics.BitmapFactory
-import android.graphics.Bitmap
-import android.R.attr.data
 import android.app.Activity
-import com.gram.pictory.R
 
 
 class SignUpActivity: AppCompatActivity() {
@@ -76,10 +72,10 @@ class SignUpActivity: AppCompatActivity() {
     }
 
     fun successSignUp(){
-
+        // 토큰 저장
     }
 
     fun failSignUp(){
-      
+        // 토큰
     }
 }

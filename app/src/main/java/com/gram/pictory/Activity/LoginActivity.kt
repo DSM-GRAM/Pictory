@@ -3,15 +3,11 @@ package com.gram.pictory.Activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-
 import com.gram.pictory.R
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.startActivity
 import com.gram.pictory.Connect.Connecter.api
 import com.gram.pictory.Model.LoginModel
-import com.gram.pictory.R
-import kotlinx.android.synthetic.main.activity_login.*
-import org.jetbrains.anko.startActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -56,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
         registerTextView.setOnClickListener {
-            startActivity<SignupActivity>()
+            startActivity<SignUpActivity>()
         }
 
     }
