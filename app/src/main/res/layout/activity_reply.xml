@@ -60,7 +60,6 @@
             android:layout_height="wrap_content">
         <EditText
                 android:id="@+id/reply_edit"
-                android:background="null"
                 android:layout_margin="10dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
