@@ -44,7 +44,9 @@ interface API {
     @Headers("Content-Type:application/json")
     fun postReply(@Path("postCode") postCode: Int, @Body body: Any?): Call<Unit>
 
-    @PATCH("/signup/")
+    @PATCH("/postEdit/")
     @Headers("Content-Type:application/json")
     fun signEdit(@Body body: Any?): Call<Unit>
+
+
 }

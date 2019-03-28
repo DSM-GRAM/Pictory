@@ -1,5 +1,8 @@
 package com.gram.pictory.Activity
 
+import android.app.Activity
+import android.content.Intent
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.gram.pictory.Connect.Connecter
@@ -10,9 +13,6 @@ import org.jetbrains.anko.toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import android.content.Intent
-import android.graphics.BitmapFactory
-import android.app.Activity
 
 
 class SignUpActivity: AppCompatActivity() {
@@ -36,7 +36,7 @@ class SignUpActivity: AppCompatActivity() {
                     "password" to pwSignUpEditText.text,
                     "name" to nameEditText.text,
                     "birth" to birthEditText.text
-                )).enqueue(object: Callback<Unit>{
+                    )).enqueue(object: Callback<Unit>{
 
                     override fun onResponse(call: Call<Unit>?, response: Response<Unit>?) {
                         successSignUp()

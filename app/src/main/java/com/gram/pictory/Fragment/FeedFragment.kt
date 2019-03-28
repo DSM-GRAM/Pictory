@@ -2,17 +2,14 @@ package com.gram.pictory.Fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.gram.pictory.Activity.ReplyActivity
-import com.gram.pictory.Adapter.FeedAdapter
 import com.gram.pictory.Connect.Connecter.api
 import com.gram.pictory.Model.FeedModel
 import com.gram.pictory.R
 import com.gram.pictory.Util.FeedClickCallback
-import kotlinx.android.synthetic.main.fragment_feed.*
 import org.jetbrains.anko.support.v4.startActivity
 import org.jetbrains.anko.support.v4.toast
 import retrofit2.Call
@@ -24,8 +21,8 @@ class FeedFragment: Fragment(), FeedClickCallback {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         super.onCreateView(inflater, container, savedInstanceState)
         val view = inflater.inflate(R.layout.fragment_feed, container, false)
-        feed_recyclerview.layoutManager = LinearLayoutManager(activity)
-        feed_recyclerview.adapter = FeedAdapter(setAdapterData(), this)
+        //feed_recyclerview.layoutManager = LinearLayoutManager(activity)
+        //feed_recyclerview.adapter = FeedAdapter(setAdapterData(), this)
         return view
     }
 

@@ -23,5 +23,9 @@ class ProfileEditActivity: AppCompatActivity() {
                 "birth" to birthEditText.text
             ))
         }
+
+        profileEditBtn.setOnClickListener {
+            finish()
+        }
     }
 }
